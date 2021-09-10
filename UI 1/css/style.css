@@ -180,6 +180,8 @@ body {
 
 /* Add to cart CSS end */
 
+/*Quantity CSS start*/
+
 .quantity{
     display: flex;
     margin: 7px 0 0 0;
@@ -215,4 +217,64 @@ body {
     cursor: pointer;
     box-shadow: 0 0 0 0.2rem rgba(252, 186, 3,.45);
 
+}
+
+/*Quantity CSS end*/
+
+/*Cart CSS start*/
+.cart-complete{
+    position: relative;
+}
+
+.cart-contents {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    right: 2%;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.5);
+}
+
+.shopping-cart-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    padding-bottom: 10px;
+}
+.cart-contents:before{
+    content:'';
+    display:block;
+    position:absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    top: -20px;
+    right: 13px
+}
+
+.shopping-cart-items {
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.shopping-cart-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.cart-item-image {
+    height:90px;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
 }
